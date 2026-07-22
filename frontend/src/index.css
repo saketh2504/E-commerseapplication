@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts: Cabinet Grotesk (headings) and Manrope (body) via Fontshare / Google */
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900,500,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+
+html, body, #root {
+    background: #FFFFFF;
+    color: #0A0A0A;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.005em;
+}
+
+.font-display {
+    font-family: "Cabinet Grotesk", "Manrope", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.font-mono-caps {
+    font-family: "Manrope", monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.hard-shadow {
+    box-shadow: 4px 4px 0px 0px #0A0A0A;
+}
+.hard-shadow-invert {
+    box-shadow: 4px 4px 0px 0px #FFFFFF;
+}
+
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #F9F9F9; }
+::-webkit-scrollbar-thumb { background: #0A0A0A; }
+
+::selection { background: #0A0A0A; color: #FFFFFF; }
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 4%;
+        --primary: 0 0% 4%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 97%;
+        --secondary-foreground: 0 0% 4%;
+        --muted: 0 0% 97%;
+        --muted-foreground: 0 0% 32%;
+        --accent: 0 0% 90%;
+        --accent-foreground: 0 0% 4%;
+        --destructive: 8 76% 48%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 90%;
+        --input: 0 0% 90%;
+        --ring: 0 0% 4%;
+        --radius: 0rem;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    body { @apply bg-background text-foreground; }
+}
+
+/* Micro-transitions */
+button, a, input, select, textarea {
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}

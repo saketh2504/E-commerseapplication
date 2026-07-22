@@ -1,0 +1,166 @@
+{
+  "theme": "Editorial Brutalism (Light Mode Default with High-Contrast Dark Accents)",
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk, sans-serif",
+      "weights": ["800", "900"],
+      "sizes": {
+        "h1": "text-5xl sm:text-6xl lg:text-[5rem] tracking-tighter uppercase leading-none",
+        "h2": "text-3xl sm:text-4xl tracking-tight uppercase",
+        "h3": "text-xl sm:text-2xl font-bold"
+      }
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "sizes": {
+        "base": "text-base leading-relaxed tracking-wide",
+        "small": "text-sm uppercase tracking-[0.1em]"
+      }
+    },
+    "guidelines": "Do not use Inter. Use Cabinet Grotesk for high-impact, brutalist headers. Keep letter spacing very tight on massive headers, and wide on small labels (tracking-[0.15em])."
+  },
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F9F9F9",
+      "accent": "#E5E5E5"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#525252",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#0A0A0A",
+      "accent": "#D9381E",
+      "success": "#2E4F2B"
+    },
+    "guidelines": "High contrast minimal palette. 95% of UI should be Stark White and Pitch Black. Use Accent Red (#D9381E) purely for kinetic triggers like 'Sale' tags or primary checkout buttons."
+  },
+  "layouts": {
+    "hero": "Asymmetrical split screen or massive overlapping typography over edge-to-edge images. Do not center everything. Left-align giant typography over a 80vh image.",
+    "product_grid": "Bento-style or masonry grid. Avoid perfect 4-column symmetry. Use col-span-2 for featured products to break the rhythm.",
+    "product_detail": "Sticky product info on the right, large scrolling image gallery on the left.",
+    "admin_panel": "Dense, high-utility border-collapse grid. Use Shadcn components heavily customized to look sharp (0px border radius)."
+  },
+  "grids": {
+    "marketing": "grid-cols-1 md:grid-cols-12 gap-1 md:gap-px bg-gray-200 border-collapse. (1px brutalist borders separating sections).",
+    "dashboard": "grid-cols-1 md:grid-cols-4 gap-4"
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #E5E5E5 everywhere. Define sections using these hard lines instead of shadows.",
+    "radius": "rounded-none everywhere. Sharp corners emphasize the high-end avant-garde fashion feel.",
+    "shadows": "Remove all soft shadows. Use hard offset shadows (e.g., 4px 4px 0px #0A0A0A) if elevation is needed, but mostly rely on flat borders.",
+    "surfaces": "Solid colors only. No glassmorphism in this theme. Unapologetic stark blocks."
+  },
+  "component_name": {
+    "buttons": "Square edges, inverted hover states. E.g., Black bg / White text -> White bg / Black text / 1px Black border on hover.",
+    "cards": "No padding cards with image filling top, thin border separating text below. Or text overlaid on image with bg-black/40."
+  },
+  "component_path": {
+    "ui_library": "src/components/ui",
+    "forms": "Use customized Shadcn UI forms, remove standard Vercel roundness. Force square corners."
+  },
+  "motion": {
+    "hover": "Instant or very fast transitions (0.15s ease). Hovering product images should reveal alternate angle or slight scale up.",
+    "scroll": "Use Lenis for smooth momentum scrolling. Staggered reveal for product grid items.",
+    "micro": "Marquee text for announcements ('FREE SHIPPING ON ORDERS OVER $200') using react-fast-marquee."
+  },
+  "accessibility": {
+    "contrast": "Ensure pure black text on white backgrounds. Use text-white over dark hero images with minimum bg-black/30 overlay.",
+    "focus": "focus:ring-2 focus:ring-black focus:outline-none.",
+    "motion": "Respect prefers-reduced-motion for the marquee and scroll effects."
+  },
+  "media": {
+    "image_treatment": "High contrast, slightly desaturated editorial photography. Use grayscale for empty states.",
+    "aspect_ratios": "Portrait (3:4 or 4:5) for all apparel products to maximize vertical screen space on mobile."
+  },
+  "3d_libraries": {
+    "status": "Not required",
+    "reason": "Fashion e-commerce relies heavily on photography. High-res imagery > 3D models here, unless specifically building a 3D shoe viewer."
+  },
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://images.pexels.com/photos/28609628/pexels-photo-28609628.jpeg",
+        "category": "hero_background",
+        "description": "Dynamic motion capture of a fashion model in an avant-garde outfit indoors. Perfect for the main landing page hero."
+      },
+      {
+        "url": "https://images.pexels.com/photos/9121191/pexels-photo-9121191.jpeg",
+        "category": "hero_secondary",
+        "description": "Artistic portrait of a model in colorful conceptual fashion."
+      }
+    ],
+    "categories": [
+      {
+        "url": "https://images.pexels.com/photos/8346043/pexels-photo-8346043.jpeg",
+        "category": "category_mens",
+        "description": "A man in casual wear selects from a stylish clothing rack."
+      },
+      {
+        "url": "https://images.pexels.com/photos/9594668/pexels-photo-9594668.jpeg",
+        "category": "category_minimalist",
+        "description": "Simple and elegant clothing rack display in a minimalist studio."
+      }
+    ],
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1467043237213-65f2da53396f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoaWdoJTIwZW5kJTIwZmFzaGlvbiUyMGFwcGFyZWwlMjBmbGF0JTIwbGF5fGVufDB8fHx8MTc4MTg2MzQzOXww&ixlib=rb-4.1.0&q=85",
+        "category": "product_apparel",
+        "description": "White crew neck t-shirt and brown leather boots flat lay."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1608680480325-d3ec3cdf7e60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxoaWdoJTIwZW5kJTIwZmFzaGlvbiUyMGFwcGFyZWwlMjBmbGF0JTIwbGF5fGVufDB8fHx8MTc4MTg2MzQzOXww&ixlib=rb-4.1.0&q=85",
+        "category": "product_apparel",
+        "description": "Hoodie and dark clothing flat lay."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603805752838-aa579d77da72?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxoaWdoJTIwZW5kJTIwZmFzaGlvbiUyMGFwcGFyZWwlMjBmbGF0JTIwbGF5fGVufDB8fHx8MTc4MTg2MzQzOXww&ixlib=rb-4.1.0&q=85",
+        "category": "product_apparel",
+        "description": "Black leather jacket and dress flat lay."
+      },
+      {
+        "url": "https://images.pexels.com/photos/17435382/pexels-photo-17435382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "product_accessories",
+        "description": "Chic Dior bag and sandals."
+      },
+      {
+        "url": "https://images.pexels.com/photos/1537681/pexels-photo-1537681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "product_accessories",
+        "description": "Top view of stylish black jacket with bag."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install the following dependencies: lucide-react, react-fast-marquee, @phosphor-icons/react",
+    "Use Phosphor icons (duotone or thin) to match the high-end editorial feel.",
+    "For the Landing Page, build an asymmetrical hero layout. Do NOT just center a title and a button over a background image. Have a solid left panel with oversized typography (Cabinet Grotesk) and a right panel showing the hero image.",
+    "Implement a marquee banner at the top of the site using react-fast-marquee for announcements.",
+    "Product filters on the PLP (Product Listing Page) should be a sticky sidebar or an off-canvas drawer with bold checkboxes and stark typography.",
+    "The shopping cart should be a right-side drawer overlay.",
+    "Admin panel should feel dense and utilitarian. Use 1px borders for all tables, no rounded corners.",
+    "Use standard HTML/Tailwind for the marketing layouts, but heavily utilize Shadcn for Select, DropdownMenu, Dialog, and Forms in the Admin and Checkout flows.",
+    "Avoid generic 'Card' components from Shadcn on the storefront. Use raw divs with 1px borders to create a border-collapse grid look.",
+    "Do NOT use Space Grotesk. Use Cabinet Grotesk for headings and Manrope for body.",
+    "DO NOT use a completely transparent background in headers, overlays, or any surface that has content under it. ALWAYS use a solid or glassmorphism background to preserve readability."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style. For this app, use sharp edges (rounded-none).",
+    "NEVER: use AI assistant Emoji characters like \ud83e\udd16\ud83e\udde0\ud83d\udcad\ud83d\udca1\ud83d\udd2e\ud83c\udfaf etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ]
+}

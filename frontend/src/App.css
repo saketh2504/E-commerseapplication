@@ -1,0 +1,6 @@
+/* App-level styles kept minimal — most styling handled via Tailwind + index.css */
+.marquee-track {
+    display: flex;
+    gap: 3rem;
+    padding: 0.5rem 0;
+}
