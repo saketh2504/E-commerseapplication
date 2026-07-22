@@ -4,8 +4,8 @@ A full-stack e-commerce web application built using **React**, **FastAPI**, and 
 
 ## 🚀 Live Demo
 
-- **Frontend:** https://e-commerceapplication.vercel.app
-- **Backend:** https://ecommerce-backend-gffh.onrender.com
+- **Frontend:** https://e-commerseapplication.vercel.app
+- **Backend:** https://ecommerse-backend-gffh.onrender.com
 
 ## ✨ Features
 
