@@ -4,8 +4,8 @@ A full-stack e-commerce web application built using **React**, **FastAPI**, and 
 
 ## 🚀 Live Demo
 
-- **Frontend:** https://YOUR-FRONTEND-LINK
-- **Backend:** https://YOUR-BACKEND-LINK
+- **Frontend:** https://e-commerceapplication.vercel.app
+- **Backend:** https://ecommerce-backend-gffh.onrender.com
 
 ## ✨ Features
 
@@ -117,7 +117,7 @@ screenshots/
 **Saketh Anumari**
 
 - GitHub: https://github.com/saketh2504
-- LinkedIn: *(Add your LinkedIn profile URL)*
+- LinkedIn:https://www.linkedin.com/in/saketh-anumari-ba85a42bb/
 
 ---
 
