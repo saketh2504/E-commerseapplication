@@ -3,105 +3,84 @@
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
-A full-stack **E-Commerce Web Application** built using **React**, **FastAPI**, and **MongoDB**. It provides a seamless online shopping experience with secure authentication, product management, shopping cart functionality, and an admin dashboard.
-
----
-
-## 🚀 Live Demo
-
-* **Frontend:** https://e-commerseapplication.vercel.app
-* **Backend:** https://ecommerse-backend-gffh.onrender.com
+A modern **full-stack E-Commerce web application** built with **React**, **FastAPI**, and **MongoDB**. The application provides secure authentication, seamless product browsing, shopping cart management, checkout functionality, and an intuitive shopping experience with a responsive user interface.
 
 ---
 
-## 📑 Table of Contents
+# 🚀 Live Demo
 
-* Features
-* Tech Stack
-* Project Structure
-* Installation
-* Screenshots
-* API Overview
-* Deployment
-* Future Enhancements
-* Author
+- **Frontend:** https://e-commerseapplication.vercel.app
+- **Backend:** https://ecommerse-backend-gffh.onrender.com
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 👤 User Features
+## 👤 User Features
 
-* 🔐 Secure User Registration & Login (JWT Authentication)
-* 🛍️ Browse Products by Categories
-* 🔎 Search & Filter Products
-* 🛒 Add/Remove Products from Cart
-* 💳 Checkout & Place Orders
-* 📦 View Order History
-* 👤 Manage User Profile
-* 📱 Fully Responsive User Interface
+- Secure JWT Authentication
+- User Registration & Login
+- Browse Products by Categories
+- Product Search
+- Product Filtering
+- Product Details Page
+- Shopping Cart
+- Checkout
+- Order Placement
+- Responsive Design
 
-### 👨‍💼 Admin Features
+## 👨‍💼 Admin Features
 
-* ➕ Add New Products
-* ✏️ Update Existing Products
-* ❌ Delete Products
-* 📊 Manage Product Inventory
+- Add Products
+- Edit Products
+- Delete Products
+- Manage Inventory
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 ### Frontend
 
-* React.js
-* React Router
-* Tailwind CSS
-* Axios
+- React.js
+- React Router
+- Tailwind CSS
+- Axios
 
 ### Backend
 
-* FastAPI
-* Python
-* JWT Authentication
-* Pydantic
+- FastAPI
+- Python
+- JWT Authentication
+- Pydantic
 
 ### Database
 
-* MongoDB Atlas
+- MongoDB Atlas
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 E-commerseapplication/
 │
 ├── backend/
-│   ├── server.py
-│   ├── requirements.txt
-│   └── .env
-│
 ├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── .env
-│
 ├── assets/
 │   └── screenshots/
-│
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone the Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/saketh2504/E-commerseapplication.git
@@ -109,7 +88,7 @@ git clone https://github.com/saketh2504/E-commerseapplication.git
 cd E-commerseapplication
 ```
 
-### Backend Setup
+## Backend
 
 ```bash
 cd backend
@@ -124,7 +103,7 @@ pip install -r requirements.txt
 uvicorn server:app --reload
 ```
 
-### Frontend Setup
+## Frontend
 
 ```bash
 cd frontend
@@ -136,87 +115,96 @@ npm start
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-> Replace these images after uploading your screenshots to the `assets/screenshots` folder.
-
-### 🏠 Home Page
+## 🏠 Home Page
 
 ![Home](assets/screenshots/home.png)
 
 ---
 
-### 🛍️ Products Page
+## 🔐 Login
+
+![Login](assets/screenshots/login.png)
+
+---
+
+## 📝 Register
+
+![Register](assets/screenshots/register.png)
+
+---
+
+## 🛍️ Product Collection
+
+![Collection](assets/screenshots/collection.png)
+
+---
+
+## 🛒 Products
 
 ![Products](assets/screenshots/products.png)
 
 ---
 
-### 📦 Product Details
+## 📦 Product Details
 
 ![Product Details](assets/screenshots/product-details.png)
 
 ---
 
-### 🛒 Shopping Cart
+## 👜 Shopping Cart
 
 ![Cart](assets/screenshots/cart.png)
 
 ---
 
-### 💳 Checkout
+## 💳 Checkout
 
 ![Checkout](assets/screenshots/checkout.png)
 
 ---
 
-### 👨‍💼 Admin Dashboard
-
-![Admin Dashboard](assets/screenshots/admin-dashboard.png)
-
----
-
-## 📡 API Overview
+# 📡 API Overview
 
 The backend exposes RESTful APIs for:
 
-* Authentication
-* Product Management
-* Shopping Cart
-* Orders
-* User Management
+- Authentication
+- Products
+- Shopping Cart
+- Orders
+- User Management
 
 ---
 
-## ☁️ Deployment
+# ☁️ Deployment
 
-* **Frontend:** Vercel
-* **Backend:** Render
-* **Database:** MongoDB Atlas
-
----
-
-## 🔮 Future Enhancements
-
-* 💳 Online Payment Gateway Integration
-* ❤️ Wishlist Feature
-* ⭐ Product Reviews & Ratings
-* 📧 Email Notifications
-* 🚚 Order Tracking
-* 📦 Inventory Management
-* 📈 Sales Analytics Dashboard
+- Frontend deployed on **Vercel**
+- Backend deployed on **Render**
+- Database hosted on **MongoDB Atlas**
 
 ---
 
-## 👨‍💻 Author
+# 🔮 Future Enhancements
+
+- 💳 Payment Gateway Integration (Stripe/Razorpay)
+- ❤️ Wishlist Feature
+- ⭐ Product Ratings & Reviews
+- 📧 Email Notifications
+- 🚚 Live Order Tracking
+- 📦 Inventory Analytics
+
+---
+
+# 👨‍💻 Author
 
 **Saketh Anumari**
 
-* **GitHub:** https://github.com/saketh2504
-* **LinkedIn:** https://www.linkedin.com/in/saketh-anumari-ba85a42bb/
+- GitHub: https://github.com/saketh2504
+- LinkedIn: https://www.linkedin.com/in/saketh-anumari-ba85a42bb/
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub. It helps others discover the project and supports my work.
+If you found this project useful, consider giving it a ⭐ on GitHub.
